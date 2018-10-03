@@ -45,15 +45,15 @@ typedef struct r_emu_interactor_plugin_t {
  * maybe should have a second parameter specifying the playing time
  *
  * */
-int play_wave(chat * filename)
+int play_wave(char * filename)
 {
 	/*
 	 * Init SDL audo engine and variables
 	 */
 	SDL_Init(SDL_INIT_AUDIO);
 	SDL_AudioSpec wav_desc;
-	uint32 wav_length;
-	uint8 * wav_buffer;
+	uint32_t wav_length;
+	uint8_t * wav_buffer;
 	/*
 	 * Load file and open audio device
 	 */
